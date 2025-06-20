@@ -1,10 +1,7 @@
-h1 {
-  text-align: center;
-}
 
 .hero {
-  /* background-image: url(assets/cerejeiras.jpg); */
   height: 100vh;
+  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,11 +9,18 @@ h1 {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* empurra o conteúdo pro começo da linha, ou seja, esquerda */
+  padding-left: 40px; /* deixa o texto um pouco afastado da borda */
+  text-align: left; /* para garantir que o texto fique alinhado à esquerda */
   color: white;
 
+}
+.hero header {
+  position: relative;
+  z-index: 1;
 
 }
+
 .hero::before {
   content: "";
   position: absolute;
@@ -25,8 +29,18 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(8px);
+  filter: blur(2px);
   opacity: 0.7;
   z-index: -1;
+
+}
+
+.hero h1 {
+  font-size: 4rem; /* define o tamanho */
+  margin-bottom: 0.5rem; /* espaçamento entre título e subtítulo */
+}
+
+.hero h2 {
+ font-size: 2rem; /* define o tamanho */  
 
 }
