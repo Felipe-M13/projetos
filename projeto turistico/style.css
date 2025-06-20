@@ -3,12 +3,30 @@ h1 {
 }
 
 .hero {
-  background-image: url(assets/cerejeiras.jpg);
+  /* background-image: url(assets/cerejeiras.jpg); */
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(assets/cerejeiras.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  opacity: 0.7;
+  z-index: -1;
 
 }
