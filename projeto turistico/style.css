@@ -46,9 +46,6 @@ body {
 .hero h1 {
   font-size: 2rem; /* define o tamanho da fonte*/
   margin-bottom: 0.5rem; /* espaçamento entre título e subtítulo */
-  /*background: linear-gradient(to bottom, #f8c7c0, #ebc3cd); /* cria o degradê de cima (branco) pra baixo (vermelho) */
-  -webkit-background-clip: text; /* faz o background ser “recortado” pelo texto (só funciona com WebKit) */
-  /*-webkit-text-fill-color: transparent; /* deixa a cor do texto transparente pra mostrar o fundo */
   font-weight: bold;
   color: white;
 
@@ -56,8 +53,28 @@ body {
 
 .hero h2 {
  font-size: 1.6rem; /* define o tamanho da fonte */
- /*background: linear-gradient(to top, white, #b78a8d); /* inverte o degradê: vermelho embaixo, branco em cima */
- -webkit-background-clip: text;
- /*-webkit-text-fill-color: transparent; 
  font-weight: 500;
+}
+
+.primeiro{
+  padding: 40px; /*espaço interno em todos os lados (topo, direita, baixo, esquerda).*/
+  color: #E1624F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-top: 40px; /* Espaço externo em cima do parágrafo — distancia ele do que estiver acima. */
+  margin-bottom: 0; /* Espaço externo embaixo do parágrafo — zero, pra ele ficar grudado com o próximo. */
+  padding-bottom: 0; /* Remove o espaço interno só na parte de baixo */
+  line-height: 1.2; /* Altura da linha, controla o espaçamento vertical entre as linhas do texto */
+}
+
+.segundo{
+    color: black;
+    padding: 40px;
+    padding-top: 0; 
+    margin-top: 0; /*Remove o espaço externo em cima (pra colar no .primeiro).*/
+    line-height: 1.2; /*Altura da linha do texto.*/
+    margin-bottom: 3rem;  /*Espaço externo embaixo pra separar o texto que vier depois, 3rem é tipo 3 vezes o tamanho da fonte.*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bold; /*Texto em negrito. */
 }
