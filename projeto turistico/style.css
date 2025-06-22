@@ -78,3 +78,17 @@ body {
     font-size: 3rem;
     font-weight: bold; /*Texto em negrito. */
 }
+
+.fuji img {
+  width: 1320px;
+  height: 650px;
+  border-radius: 5%; /* deixa as bordas arredondadas */
+  margin-top: -100px !important;
+  /*height: auto; /* mantém a proporção vertical */
+  display: block;
+  margin: 0 auto;
+}
+
+.fuji h2 {
+  font-size: ;
+}
