@@ -83,12 +83,13 @@ body {
   width: 1320px;
   height: 650px;
   border-radius: 5%; /* deixa as bordas arredondadas */
-  margin-top: -100px !important;
-  /*height: auto; /* mantém a proporção vertical */
-  display: block;
-  margin: 0 auto;
+  display: block; /* faz a imagem ocupar uma linha inteira, quebrando linha */
+  margin-top: -40px;
+  margin-left: 40px;
 }
 
 .fuji h2 {
-  font-size: ;
+  color: black;
+  font-size: 2.5rem;
+  padding-left: 50px;
 }
