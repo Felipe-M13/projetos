@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Serif JP', serif;
   color: #FAF8F5;
   margin: 0;
-
+  overflow-x: hidden; /* impede que qualquer coisa crie scroll pro lado */
 }
 
 
@@ -40,6 +40,7 @@ body {
   opacity: 0.7;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.4); /* camada escura suave */
+  max-width 98%;
 
 }
 
@@ -80,16 +81,49 @@ body {
 }
 
 .fuji img {
-  width: 1320px;
-  height: 650px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0 auto;
   border-radius: 5%; /* deixa as bordas arredondadas */
   display: block; /* faz a imagem ocupar uma linha inteira, quebrando linha */
-  margin-top: -40px;
-  margin-left: 40px;
 }
 
 .fuji h2 {
   color: black;
-  font-size: 2.5rem;
-  padding-left: 50px;
+  font-size: 2.2rem;
+  padding-left: 80px;
+  margin-bottom: 1rem;
+}
+
+.descrição-curta-fuji {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555555;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.descrição-fuji {
+  color: black;
+  font-size: 1.2rem;
+  padding: 20px;
+  margin-top: 0;
+  padding-left: 3rem;
+
+}
+
+.indicação-fuji {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  padding-left: 5rem;
+  font-weight: bold;
+
+}
+
+.recomendações-fuji {
+  color: #0C51A7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  padding-left: 7rem;
 }
