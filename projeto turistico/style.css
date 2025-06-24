@@ -171,3 +171,25 @@ body {
   margin-bottom: 1rem;
 
 }
+
+@media (max-width: 768px) {
+  h1,h2 {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+
+
+.descrição, .indicação, .recomendações, .descrição-curta {
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.recomendações {
+  padding-left: 2rem;
+}
+
+img {
+  border-radius: 0; /* se quiser tirar arredondado em telas pequenas */
+}
+}
